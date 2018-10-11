@@ -6,6 +6,6 @@ output "public_dns" {
   value = "${module.module-ec2.public_dns}"
 }
 
-output "tags" {
-  value = "${module.module-ec2.tags}"
+output "instance_name" {
+  value = "${module.new-ec2.tags}"
 }
