@@ -7,5 +7,5 @@ output "public_dns" {
 }
 
 output "instance_name" {
-  value = "${module.module-ec2.instance_name}"
+  value = "${module.module-ec2.tags}"
 }
