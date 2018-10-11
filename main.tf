@@ -1,6 +1,5 @@
-
 module "random_name" {
-  source                 = "../module-random_pet/module-rp"
+  source = "../module-random_pet/module-rp"
 }
 
 module "module-ec2" {
@@ -10,5 +9,5 @@ module "module-ec2" {
   subnet_id              = "${var.subnet_id}"
   vpc_security_group_ids = ["${var.vpc_security_group_ids}"]
   key_pair               = "${var.key_pair}"
-  tag_name               = "${module.random_name.id}"
+  tag_name               = "${module.random_name.name}"
 }
