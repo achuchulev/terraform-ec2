@@ -1,2 +1,2 @@
 # module-ec2
-A module that creates an EC2 instance
+A TF module that creates EC2 instance in AWS
