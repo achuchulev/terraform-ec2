@@ -3,7 +3,7 @@ module "random_name" {
   source = "github.com/achuchulev/module-random_pet/module-rp"
 }
 resource "aws_key_pair" "my_key" {
-  key_name   = "key-${module.random_name.name}"
+  key_name   = "key-${var.ssh_key_name}"
   public_key = "${file("~/.ssh/id_rsa.pub")}"
 }
 
@@ -17,10 +17,5 @@ resource "aws_instance" "new_ec2" {
   
   tags {
     Name = "${module.random_name.name}"
-  }
-
-    connection {
-    user        = "ubuntu"
-    private_key = "${file("~/.ssh/id_rsa")}"
   }
 }
