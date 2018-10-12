@@ -1,4 +1,4 @@
-# A repo that creates an EC2 instance in AWS with a randomly generated name
+# A sample repo with example of EC2 instance creation in AWS with a randomly generated name
 
 ### Prerequisits
 
