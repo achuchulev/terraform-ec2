@@ -16,7 +16,7 @@ verifier:
       user: ubuntu
       hosts_output: public_ip
       key_files:
-        - id_rsa
+        - "~/.ssh/id_rsa"
       controls:
       - check_pkg
 
