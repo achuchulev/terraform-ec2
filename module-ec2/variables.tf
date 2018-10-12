@@ -1,7 +1,14 @@
+variable "access_key" {}
+variable "secret_key" {}
+
+variable "region" {
+  default = "us-east-2"
+}
+variable "ssh_key_name" {}
+
 variable "ami" {}
 variable "instance_type" {}
 variable "subnet_id" {}
-variable "key_pair" {}
 variable "vpc_security_group_ids" {
   type = "list"
 }
