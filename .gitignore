@@ -1,6 +1,8 @@
 #  Local .terraform directories
 **/.terraform/*
 
+.kitchen/
+
 # .tfstate files
 *.tfstate
 *.tfstate.*
