@@ -1,0 +1,146 @@
+I, [2018-10-12T14:51:03.235178 #55320]  INFO -- Kitchen: -----> Starting Kitchen (v1.23.2)
+W, [2018-10-12T14:51:03.838337 #55320]  WARN -- Kitchen: Running command `terraform version` in directory /Users/achuchulev/Downloads/module-ec2
+I, [2018-10-12T14:51:04.181376 #55320]  INFO -- Kitchen: Terraform v0.11.7
+I, [2018-10-12T14:51:04.626816 #55320]  INFO -- Kitchen: + provider.aws v1.40.0
+I, [2018-10-12T14:51:04.626958 #55320]  INFO -- Kitchen: + provider.random v2.0.0
+I, [2018-10-12T14:51:04.626994 #55320]  INFO -- Kitchen: 
+I, [2018-10-12T14:51:04.627023 #55320]  INFO -- Kitchen: Your version of Terraform is out of date! The latest version
+I, [2018-10-12T14:51:04.627097 #55320]  INFO -- Kitchen: is 0.11.8. You can update by downloading from www.terraform.io/downloads.html
+W, [2018-10-12T14:51:04.643536 #55320]  WARN -- Kitchen: Terraform v0.11.7 is supported
+I, [2018-10-12T14:51:07.131235 #55320]  INFO -- Kitchen: -----> Creating <default-ubuntu>...
+I, [2018-10-12T14:51:19.276978 #55320]  INFO -- Kitchen: -----> Converging <default-ubuntu>...
+E, [2018-10-12T14:51:29.579448 #55320] ERROR -- Kitchen: ------Exception-------
+E, [2018-10-12T14:51:29.579665 #55320] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2018-10-12T14:51:29.579697 #55320] ERROR -- Kitchen: Message: 1 actions failed.
+>>>>>>     Converge failed on instance <default-ubuntu>.  Please see .kitchen/logs/default-ubuntu.log for more details
+E, [2018-10-12T14:51:29.579718 #55320] ERROR -- Kitchen: ----------------------
+E, [2018-10-12T14:51:29.579736 #55320] ERROR -- Kitchen: ------Backtrace-------
+E, [2018-10-12T14:51:29.579756 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:183:in `report_errors'
+E, [2018-10-12T14:51:29.579773 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:174:in `run_action'
+E, [2018-10-12T14:51:29.579789 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/command/action.rb:36:in `block in call'
+E, [2018-10-12T14:51:29.579806 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2018-10-12T14:51:29.579822 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/command/action.rb:34:in `call'
+E, [2018-10-12T14:51:29.579839 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/cli.rb:52:in `perform'
+E, [2018-10-12T14:51:29.579858 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/cli.rb:193:in `block (2 levels) in <class:CLI>'
+E, [2018-10-12T14:51:29.579874 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.0/lib/thor/command.rb:27:in `run'
+E, [2018-10-12T14:51:29.579891 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.0/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-10-12T14:51:29.579907 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.0/lib/thor.rb:387:in `dispatch'
+E, [2018-10-12T14:51:29.579923 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.0/lib/thor/base.rb:466:in `start'
+E, [2018-10-12T14:51:29.579940 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/bin/kitchen:13:in `block in <top (required)>'
+E, [2018-10-12T14:51:29.579956 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2018-10-12T14:51:29.579972 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/bin/kitchen:13:in `<top (required)>'
+E, [2018-10-12T14:51:29.580001 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/bin/kitchen:23:in `load'
+E, [2018-10-12T14:51:29.580025 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/bin/kitchen:23:in `<main>'
+E, [2018-10-12T14:51:29.580040 #55320] ERROR -- Kitchen: ----End Backtrace-----
+E, [2018-10-12T14:51:29.580059 #55320] ERROR -- Kitchen: -Composite Exception--
+E, [2018-10-12T14:51:29.580074 #55320] ERROR -- Kitchen: Class: Kitchen::InstanceFailure
+E, [2018-10-12T14:51:29.580088 #55320] ERROR -- Kitchen: Message: Converge failed on instance <default-ubuntu>.  Please see .kitchen/logs/default-ubuntu.log for more details
+E, [2018-10-12T14:51:29.580107 #55320] ERROR -- Kitchen: ----------------------
+E, [2018-10-12T14:51:29.580121 #55320] ERROR -- Kitchen: ------Backtrace-------
+E, [2018-10-12T14:51:29.580135 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/kitchen-terraform-4.0.0/lib/kitchen/provisioner/terraform.rb:106:in `rescue in call'
+E, [2018-10-12T14:51:29.580150 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/kitchen-terraform-4.0.0/lib/kitchen/provisioner/terraform.rb:98:in `call'
+E, [2018-10-12T14:51:29.580164 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:408:in `block in converge_action'
+E, [2018-10-12T14:51:29.580181 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:548:in `block in synchronize_or_call'
+E, [2018-10-12T14:51:29.580196 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:546:in `synchronize'
+E, [2018-10-12T14:51:29.580210 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:546:in `synchronize_or_call'
+E, [2018-10-12T14:51:29.580227 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:513:in `block in action'
+E, [2018-10-12T14:51:29.580241 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2018-10-12T14:51:29.580256 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:512:in `action'
+E, [2018-10-12T14:51:29.580270 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:404:in `converge_action'
+E, [2018-10-12T14:51:29.580285 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2018-10-12T14:51:29.580300 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2018-10-12T14:51:29.580314 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2018-10-12T14:51:29.580331 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:380:in `each'
+E, [2018-10-12T14:51:29.580346 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2018-10-12T14:51:29.580360 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:140:in `converge'
+E, [2018-10-12T14:51:29.580375 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:197:in `public_send'
+E, [2018-10-12T14:51:29.580389 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2018-10-12T14:51:29.580419 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2018-10-12T14:51:29.580435 #55320] ERROR -- Kitchen: ----End Backtrace-----
+E, [2018-10-12T14:51:29.580449 #55320] ERROR -- Kitchen: ---Nested Exception---
+E, [2018-10-12T14:51:29.580500 #55320] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2018-10-12T14:51:29.580581 #55320] ERROR -- Kitchen: Message: Running command resulted in failure: Expected process to exit with [0], but received '1'
+---- Begin output of terraform apply -lock=true -lock-timeout=0s -input=false -auto-approve=true  -parallelism=10 -refresh=true   ----
+STDOUT: [0m[1mmodule.module-ec2.module.random_name.random_pet.random_name: Creating...[0m
+  length:    "" => "4"
+  separator: "" => "-"[0m
+[0m[1mmodule.module-ec2.module.random_name.random_pet.random_name: Creation complete after 0s (ID: visually-newly-main-sunbird)[0m[0m
+[0m[1mmodule.module-ec2.aws_key_pair.my_key: Creating...[0m
+  fingerprint: "" => "<computed>"
+  key_name:    "" => "key-visually-newly-main-sunbird"
+  public_key:  "" => "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC5TLuMcNUNAVKP5gctybicE7/Lzui0/fu7RKUbDVYd4JjZcSmco4NYUFfUE7dmPXclYYK/g4BXjNwD7MeJOEMCVn4qR2Y0e4VunrWXINnayM8sr4+LcFpFCOGgpkON6YTIdQkbrp18u1PqqtAMtCSrK1wE7yoZBw2GjBGY8fNFCFaF5ftSUqV9yaErt++SlvRKvxGaRO76ZCdi+3QQYvKwUW4FIebZe6bXslemyrUk657rihembboLbfWhPzlugcyIzyxtQGwVHj3alqsRvDBtz5lkjXTcrYbdNatJ6wnfOrAl1tLLX2lNOhFHxbVMvdcenRDXH3gALdUGp8lSeojXVj0zF/eymCw17wNtQqCg5McGUe3TucvYh+ZdImufpmaIuCubrPdIRwkGGvAlaMQKM5LJU2x1xd26phn66nAv4Db37IVR+J+HllT+JRQOUxSTeaqbijeM74Vga+HyP/GqjtE/mYh2s7MPU51MPnXrz/DqtTmGNMcFVuEarQ6MdSlIfoT0Xs55GRP/bbTeSYzQXtKgAAMUcp4JP5zpkR36z7eybikbXVROJBkZVUsdQ1tf0/HyTTMZwXM4sljUmQNEklMuCmf+5qHPZL4V9kyYQhxXHGUW0qyHf4K/2uQhP3q6eeKV030QwMfnhIHnxm43ZgjGDhKzXkRW8KYuxZEOoQ== atanas.v4@gmail.com"[0m
+[0m[1mmodule.module-ec2.aws_key_pair.my_key: Creation complete after 2s (ID: key-visually-newly-main-sunbird)[0m[0m
+[0m[1mmodule.module-ec2.aws_instance.new_ec2: Creating...[0m
+  ami:                               "" => "ami-0daad02ff4ba87139"
+  arn:                               "" => "<computed>"
+  associate_public_ip_address:       "" => "<computed>"
+  availability_zone:                 "" => "<computed>"
+  cpu_core_count:                    "" => "<computed>"
+  cpu_threads_per_core:              "" => "<computed>"
+  ebs_block_device.#:                "" => "<computed>"
+  ephemeral_block_device.#:          "" => "<computed>"
+  get_password_data:                 "" => "false"
+  instance_state:                    "" => "<computed>"
+  instance_type:                     "" => "t2.micro"
+  ipv6_address_count:                "" => "<computed>"
+  ipv6_addresses.#:                  "" => "<computed>"
+  key_name:                          "" => "key-visually-newly-main-sunbird"
+  network_interface.#:               "" => "<computed>"
+  network_interface_id:              "" => "<computed>"
+  password_data:                     "" => "<computed>"
+  placement_group:                   "" => "<computed>"
+  primary_network_interface_id:      "" => "<computed>"
+  private_dns:                       "" => "<computed>"
+  private_ip:                        "" => "<computed>"
+  public_dns:                        "" => "<computed>"
+  public_ip:                         "" => "<computed>"
+  root_block_device.#:               "" => "<computed>"
+  security_groups.#:                 "" => "<computed>"
+  source_dest_check:                 "" => "true"
+  subnet_id:                         "" => "subnet-8a9f0ff0"
+  tags.%:                            "" => "1"
+  tags.Name:                         "" => "visually-newly-main-sunbird"
+  tenancy:                           "" => "<computed>"
+  volume_tags.%:                     "" => "<computed>"
+  vpc_security_group_ids.#:          "" => "1"
+  vpc_security_group_ids.3109554475: "" => "sg-0e3a153ccaa3977cd"[0m
+STDERR: [31m
+[1m[31mError: [0m[0m[1mError applying plan:
+
+1 error(s) occurred:
+
+* module.module-ec2.aws_instance.new_ec2: 1 error(s) occurred:
+
+* aws_instance.new_ec2: Error launching source instance: Blocked: This account is currently blocked and not recognized as a valid account. Please contact aws-verification@amazon.com if you have questions.
+	status code: 400, request id: bea4e663-d81c-4198-954d-4f5e9c348e89
+
+Terraform does not automatically rollback in the face of errors.
+Instead, your Terraform state file has been partially updated with
+any resources that successfully completed. Please address the error
+above and apply again to incrementally change your infrastructure.[0m
+
+[0m[0m[0m
+---- End output of terraform apply -lock=true -lock-timeout=0s -input=false -auto-approve=true  -parallelism=10 -refresh=true   ----
+Ran terraform apply -lock=true -lock-timeout=0s -input=false -auto-approve=true  -parallelism=10 -refresh=true   returned 1
+E, [2018-10-12T14:51:29.580632 #55320] ERROR -- Kitchen: ----------------------
+E, [2018-10-12T14:51:29.580652 #55320] ERROR -- Kitchen: ------Backtrace-------
+E, [2018-10-12T14:51:29.580668 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/kitchen-terraform-4.0.0/lib/kitchen/provisioner/terraform.rb:106:in `rescue in call'
+E, [2018-10-12T14:51:29.580683 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/kitchen-terraform-4.0.0/lib/kitchen/provisioner/terraform.rb:98:in `call'
+E, [2018-10-12T14:51:29.580702 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:408:in `block in converge_action'
+E, [2018-10-12T14:51:29.580716 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:548:in `block in synchronize_or_call'
+E, [2018-10-12T14:51:29.580733 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:546:in `synchronize'
+E, [2018-10-12T14:51:29.580748 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:546:in `synchronize_or_call'
+E, [2018-10-12T14:51:29.580762 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:513:in `block in action'
+E, [2018-10-12T14:51:29.580777 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2018-10-12T14:51:29.580791 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:512:in `action'
+E, [2018-10-12T14:51:29.580806 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:404:in `converge_action'
+E, [2018-10-12T14:51:29.580820 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2018-10-12T14:51:29.580834 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2018-10-12T14:51:29.580851 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2018-10-12T14:51:29.580866 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:380:in `each'
+E, [2018-10-12T14:51:29.580880 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2018-10-12T14:51:29.580900 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:140:in `converge'
+E, [2018-10-12T14:51:29.580928 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:197:in `public_send'
+E, [2018-10-12T14:51:29.580943 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2018-10-12T14:51:29.580958 #55320] ERROR -- Kitchen: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2018-10-12T14:51:29.580972 #55320] ERROR -- Kitchen: ----End Backtrace-----

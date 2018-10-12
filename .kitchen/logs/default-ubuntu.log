@@ -1,0 +1,280 @@
+I, [2018-10-12T14:51:07.131312 #55320]  INFO -- default-ubuntu: -----> Creating <default-ubuntu>...
+W, [2018-10-12T14:51:07.131586 #55320]  WARN -- default-ubuntu: Running command `terraform init -input=false -lock=true -lock-timeout=0s  -upgrade -force-copy -backend=true  -get=true -get-plugins=true  -verify-plugins=true` in directory /Users/achuchulev/Downloads/module-ec2
+I, [2018-10-12T14:51:07.198477 #55320]  INFO -- default-ubuntu: [0m[1mUpgrading modules...[0m
+I, [2018-10-12T14:51:07.199016 #55320]  INFO -- default-ubuntu: - module.module-ec2
+I, [2018-10-12T14:51:07.199919 #55320]  INFO -- default-ubuntu:   Updating source "github.com/achuchulev/module-ec2/module-ec2"
+I, [2018-10-12T14:51:08.305873 #55320]  INFO -- default-ubuntu: - module.module-ec2.random_name
+I, [2018-10-12T14:51:08.306066 #55320]  INFO -- default-ubuntu:   Updating source "github.com/achuchulev/module-random_pet/module-rp"
+I, [2018-10-12T14:51:09.126639 #55320]  INFO -- default-ubuntu: 
+I, [2018-10-12T14:51:09.126807 #55320]  INFO -- default-ubuntu: [0m[1mInitializing provider plugins...[0m
+I, [2018-10-12T14:51:09.127094 #55320]  INFO -- default-ubuntu: - Checking for available provider plugins on https://releases.hashicorp.com...
+I, [2018-10-12T14:51:09.630730 #55320]  INFO -- default-ubuntu: - Downloading plugin for provider "aws" (1.40.0)...
+I, [2018-10-12T14:51:17.944105 #55320]  INFO -- default-ubuntu: - Downloading plugin for provider "random" (2.0.0)...
+I, [2018-10-12T14:51:19.117855 #55320]  INFO -- default-ubuntu: 
+I, [2018-10-12T14:51:19.118274 #55320]  INFO -- default-ubuntu: The following providers do not have any version constraints in configuration,
+I, [2018-10-12T14:51:19.118387 #55320]  INFO -- default-ubuntu: so the latest version was installed.
+I, [2018-10-12T14:51:19.118460 #55320]  INFO -- default-ubuntu: 
+I, [2018-10-12T14:51:19.118656 #55320]  INFO -- default-ubuntu: To prevent automatic upgrades to new major versions that may contain breaking
+I, [2018-10-12T14:51:19.118974 #55320]  INFO -- default-ubuntu: changes, it is recommended to add version = "..." constraints to the
+I, [2018-10-12T14:51:19.119412 #55320]  INFO -- default-ubuntu: corresponding provider blocks in configuration, with the constraint strings
+I, [2018-10-12T14:51:19.119538 #55320]  INFO -- default-ubuntu: suggested below.
+I, [2018-10-12T14:51:19.119674 #55320]  INFO -- default-ubuntu: 
+I, [2018-10-12T14:51:19.119911 #55320]  INFO -- default-ubuntu: * provider.aws: version = "~> 1.40"
+I, [2018-10-12T14:51:19.119962 #55320]  INFO -- default-ubuntu: * provider.random: version = "~> 2.0"
+I, [2018-10-12T14:51:19.120007 #55320]  INFO -- default-ubuntu: 
+I, [2018-10-12T14:51:19.121595 #55320]  INFO -- default-ubuntu: [0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
+W, [2018-10-12T14:51:19.142930 #55320]  WARN -- default-ubuntu: Running command `terraform workspace select kitchen-terraform-default-ubuntu` in directory /Users/achuchulev/Downloads/module-ec2
+I, [2018-10-12T14:51:19.198189 #55320]  INFO -- default-ubuntu: [31m
+I, [2018-10-12T14:51:19.198320 #55320]  INFO -- default-ubuntu: Workspace "kitchen-terraform-default-ubuntu" doesn't exist.
+I, [2018-10-12T14:51:19.198379 #55320]  INFO -- default-ubuntu: 
+I, [2018-10-12T14:51:19.198565 #55320]  INFO -- default-ubuntu: You can create this workspace with the "new" subcommand.[0m[0m
+W, [2018-10-12T14:51:19.214479 #55320]  WARN -- default-ubuntu: Running command `terraform workspace new kitchen-terraform-default-ubuntu` in directory /Users/achuchulev/Downloads/module-ec2
+I, [2018-10-12T14:51:19.254567 #55320]  INFO -- default-ubuntu: [0m[32m[1mCreated and switched to workspace "kitchen-terraform-default-ubuntu"![0m[32m
+I, [2018-10-12T14:51:19.254656 #55320]  INFO -- default-ubuntu: 
+I, [2018-10-12T14:51:19.254799 #55320]  INFO -- default-ubuntu: You're now on a new, empty workspace. Workspaces isolate their state,
+I, [2018-10-12T14:51:19.254831 #55320]  INFO -- default-ubuntu: so if you run "terraform plan" Terraform will not see any existing state
+I, [2018-10-12T14:51:19.254911 #55320]  INFO -- default-ubuntu: for this configuration.[0m
+I, [2018-10-12T14:51:19.276845 #55320]  INFO -- default-ubuntu: Finished creating <default-ubuntu> (0m12.14s).
+I, [2018-10-12T14:51:19.277253 #55320]  INFO -- default-ubuntu: -----> Converging <default-ubuntu>...
+W, [2018-10-12T14:51:19.277819 #55320]  WARN -- default-ubuntu: Running command `terraform workspace select kitchen-terraform-default-ubuntu` in directory /Users/achuchulev/Downloads/module-ec2
+W, [2018-10-12T14:51:19.328268 #55320]  WARN -- default-ubuntu: Running command `terraform get -update` in directory /Users/achuchulev/Downloads/module-ec2
+I, [2018-10-12T14:51:19.369084 #55320]  INFO -- default-ubuntu: - module.module-ec2
+I, [2018-10-12T14:51:19.369225 #55320]  INFO -- default-ubuntu:   Updating source "github.com/achuchulev/module-ec2/module-ec2"
+I, [2018-10-12T14:51:20.431756 #55320]  INFO -- default-ubuntu: - module.module-ec2.random_name
+I, [2018-10-12T14:51:20.431866 #55320]  INFO -- default-ubuntu:   Updating source "github.com/achuchulev/module-random_pet/module-rp"
+W, [2018-10-12T14:51:21.212805 #55320]  WARN -- default-ubuntu: Running command `terraform validate -check-variables=true   ` in directory /Users/achuchulev/Downloads/module-ec2
+W, [2018-10-12T14:51:21.837397 #55320]  WARN -- default-ubuntu: Running command `terraform apply -lock=true -lock-timeout=0s -input=false -auto-approve=true  -parallelism=10 -refresh=true  ` in directory /Users/achuchulev/Downloads/module-ec2
+I, [2018-10-12T14:51:24.566497 #55320]  INFO -- default-ubuntu: [0m[1mmodule.module-ec2.module.random_name.random_pet.random_name: Creating...[0m
+I, [2018-10-12T14:51:24.566596 #55320]  INFO -- default-ubuntu:   length:    "" => "4"
+I, [2018-10-12T14:51:24.566961 #55320]  INFO -- default-ubuntu:   separator: "" => "-"[0m
+I, [2018-10-12T14:51:24.566999 #55320]  INFO -- default-ubuntu: [0m[1mmodule.module-ec2.module.random_name.random_pet.random_name: Creation complete after 0s (ID: visually-newly-main-sunbird)[0m[0m
+I, [2018-10-12T14:51:26.890331 #55320]  INFO -- default-ubuntu: [0m[1mmodule.module-ec2.aws_key_pair.my_key: Creating...[0m
+I, [2018-10-12T14:51:26.890416 #55320]  INFO -- default-ubuntu:   fingerprint: "" => "<computed>"
+I, [2018-10-12T14:51:26.890580 #55320]  INFO -- default-ubuntu:   key_name:    "" => "key-visually-newly-main-sunbird"
+I, [2018-10-12T14:51:26.893243 #55320]  INFO -- default-ubuntu:   public_key:  "" => "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC5TLuMcNUNAVKP5gctybicE7/Lzui0/fu7RKUbDVYd4JjZcSmco4NYUFfUE7dmPXclYYK/g4BXjNwD7MeJOEMCVn4qR2Y0e4VunrWXINnayM8sr4+LcFpFCOGgpkON6YTIdQkbrp18u1PqqtAMtCSrK1wE7yoZBw2GjBGY8fNFCFaF5ftSUqV9yaErt++SlvRKvxGaRO76ZCdi+3QQYvKwUW4FIebZe6bXslemyrUk657rihembboLbfWhPzlugcyIzyxtQGwVHj3alqsRvDBtz5lkjXTcrYbdNatJ6wnfOrAl1tLLX2lNOhFHxbVMvdcenRDXH3gALdUGp8lSeojXVj0zF/eymCw17wNtQqCg5McGUe3TucvYh+ZdImufpmaIuCubrPdIRwkGGvAlaMQKM5LJU2x1xd26phn66nAv4Db37IVR+J+HllT+JRQOUxSTeaqbijeM74Vga+HyP/GqjtE/mYh2s7MPU51MPnXrz/DqtTmGNMcFVuEarQ6MdSlIfoT0Xs55GRP/bbTeSYzQXtKgAAMUcp4JP5zpkR36z7eybikbXVROJBkZVUsdQ1tf0/HyTTMZwXM4sljUmQNEklMuCmf+5qHPZL4V9kyYQhxXHGUW0qyHf4K/2uQhP3q6eeKV030QwMfnhIHnxm43ZgjGDhKzXkRW8KYuxZEOoQ== atanas.v4@gmail.com"[0m
+I, [2018-10-12T14:51:28.521893 #55320]  INFO -- default-ubuntu: [0m[1mmodule.module-ec2.aws_key_pair.my_key: Creation complete after 2s (ID: key-visually-newly-main-sunbird)[0m[0m
+I, [2018-10-12T14:51:28.528245 #55320]  INFO -- default-ubuntu: [0m[1mmodule.module-ec2.aws_instance.new_ec2: Creating...[0m
+I, [2018-10-12T14:51:28.528309 #55320]  INFO -- default-ubuntu:   ami:                               "" => "ami-0daad02ff4ba87139"
+I, [2018-10-12T14:51:28.528362 #55320]  INFO -- default-ubuntu:   arn:                               "" => "<computed>"
+I, [2018-10-12T14:51:28.528397 #55320]  INFO -- default-ubuntu:   associate_public_ip_address:       "" => "<computed>"
+I, [2018-10-12T14:51:28.528433 #55320]  INFO -- default-ubuntu:   availability_zone:                 "" => "<computed>"
+I, [2018-10-12T14:51:28.528470 #55320]  INFO -- default-ubuntu:   cpu_core_count:                    "" => "<computed>"
+I, [2018-10-12T14:51:28.528529 #55320]  INFO -- default-ubuntu:   cpu_threads_per_core:              "" => "<computed>"
+I, [2018-10-12T14:51:28.528567 #55320]  INFO -- default-ubuntu:   ebs_block_device.#:                "" => "<computed>"
+I, [2018-10-12T14:51:28.528599 #55320]  INFO -- default-ubuntu:   ephemeral_block_device.#:          "" => "<computed>"
+I, [2018-10-12T14:51:28.528641 #55320]  INFO -- default-ubuntu:   get_password_data:                 "" => "false"
+I, [2018-10-12T14:51:28.528737 #55320]  INFO -- default-ubuntu:   instance_state:                    "" => "<computed>"
+I, [2018-10-12T14:51:28.528880 #55320]  INFO -- default-ubuntu:   instance_type:                     "" => "t2.micro"
+I, [2018-10-12T14:51:28.528973 #55320]  INFO -- default-ubuntu:   ipv6_address_count:                "" => "<computed>"
+I, [2018-10-12T14:51:28.529049 #55320]  INFO -- default-ubuntu:   ipv6_addresses.#:                  "" => "<computed>"
+I, [2018-10-12T14:51:28.529119 #55320]  INFO -- default-ubuntu:   key_name:                          "" => "key-visually-newly-main-sunbird"
+I, [2018-10-12T14:51:28.529168 #55320]  INFO -- default-ubuntu:   network_interface.#:               "" => "<computed>"
+I, [2018-10-12T14:51:28.529205 #55320]  INFO -- default-ubuntu:   network_interface_id:              "" => "<computed>"
+I, [2018-10-12T14:51:28.529231 #55320]  INFO -- default-ubuntu:   password_data:                     "" => "<computed>"
+I, [2018-10-12T14:51:28.529253 #55320]  INFO -- default-ubuntu:   placement_group:                   "" => "<computed>"
+I, [2018-10-12T14:51:28.529285 #55320]  INFO -- default-ubuntu:   primary_network_interface_id:      "" => "<computed>"
+I, [2018-10-12T14:51:28.529307 #55320]  INFO -- default-ubuntu:   private_dns:                       "" => "<computed>"
+I, [2018-10-12T14:51:28.529659 #55320]  INFO -- default-ubuntu:   private_ip:                        "" => "<computed>"
+I, [2018-10-12T14:51:28.529687 #55320]  INFO -- default-ubuntu:   public_dns:                        "" => "<computed>"
+I, [2018-10-12T14:51:28.529715 #55320]  INFO -- default-ubuntu:   public_ip:                         "" => "<computed>"
+I, [2018-10-12T14:51:28.529746 #55320]  INFO -- default-ubuntu:   root_block_device.#:               "" => "<computed>"
+I, [2018-10-12T14:51:28.529776 #55320]  INFO -- default-ubuntu:   security_groups.#:                 "" => "<computed>"
+I, [2018-10-12T14:51:28.529801 #55320]  INFO -- default-ubuntu:   source_dest_check:                 "" => "true"
+I, [2018-10-12T14:51:28.529825 #55320]  INFO -- default-ubuntu:   subnet_id:                         "" => "subnet-8a9f0ff0"
+I, [2018-10-12T14:51:28.529846 #55320]  INFO -- default-ubuntu:   tags.%:                            "" => "1"
+I, [2018-10-12T14:51:28.529868 #55320]  INFO -- default-ubuntu:   tags.Name:                         "" => "visually-newly-main-sunbird"
+I, [2018-10-12T14:51:28.529889 #55320]  INFO -- default-ubuntu:   tenancy:                           "" => "<computed>"
+I, [2018-10-12T14:51:28.529914 #55320]  INFO -- default-ubuntu:   volume_tags.%:                     "" => "<computed>"
+I, [2018-10-12T14:51:28.529934 #55320]  INFO -- default-ubuntu:   vpc_security_group_ids.#:          "" => "1"
+I, [2018-10-12T14:51:28.529955 #55320]  INFO -- default-ubuntu:   vpc_security_group_ids.3109554475: "" => "sg-0e3a153ccaa3977cd"[0m
+I, [2018-10-12T14:51:29.557260 #55320]  INFO -- default-ubuntu: [31m
+I, [2018-10-12T14:51:29.557502 #55320]  INFO -- default-ubuntu: [1m[31mError: [0m[0m[1mError applying plan:
+I, [2018-10-12T14:51:29.557596 #55320]  INFO -- default-ubuntu: 
+I, [2018-10-12T14:51:29.557671 #55320]  INFO -- default-ubuntu: 1 error(s) occurred:
+I, [2018-10-12T14:51:29.557752 #55320]  INFO -- default-ubuntu: 
+I, [2018-10-12T14:51:29.557818 #55320]  INFO -- default-ubuntu: * module.module-ec2.aws_instance.new_ec2: 1 error(s) occurred:
+I, [2018-10-12T14:51:29.557902 #55320]  INFO -- default-ubuntu: 
+I, [2018-10-12T14:51:29.558165 #55320]  INFO -- default-ubuntu: * aws_instance.new_ec2: Error launching source instance: Blocked: This account is currently blocked and not recognized as a valid account. Please contact aws-verification@amazon.com if you have questions.
+I, [2018-10-12T14:51:29.558239 #55320]  INFO -- default-ubuntu: 	status code: 400, request id: bea4e663-d81c-4198-954d-4f5e9c348e89
+I, [2018-10-12T14:51:29.558275 #55320]  INFO -- default-ubuntu: 
+I, [2018-10-12T14:51:29.558334 #55320]  INFO -- default-ubuntu: Terraform does not automatically rollback in the face of errors.
+I, [2018-10-12T14:51:29.558376 #55320]  INFO -- default-ubuntu: Instead, your Terraform state file has been partially updated with
+I, [2018-10-12T14:51:29.558593 #55320]  INFO -- default-ubuntu: any resources that successfully completed. Please address the error
+I, [2018-10-12T14:51:29.558637 #55320]  INFO -- default-ubuntu: above and apply again to incrementally change your infrastructure.[0m
+I, [2018-10-12T14:51:29.558750 #55320]  INFO -- default-ubuntu: 
+I, [2018-10-12T14:51:29.558785 #55320]  INFO -- default-ubuntu: [0m[0m[0m
+E, [2018-10-12T14:51:29.577146 #55320] ERROR -- default-ubuntu: Converge failed on instance <default-ubuntu>.
+E, [2018-10-12T14:51:29.577377 #55320] ERROR -- default-ubuntu: ------Exception-------
+E, [2018-10-12T14:51:29.577420 #55320] ERROR -- default-ubuntu: Class: Kitchen::ActionFailed
+E, [2018-10-12T14:51:29.577449 #55320] ERROR -- default-ubuntu: Message: Running command resulted in failure: Expected process to exit with [0], but received '1'
+---- Begin output of terraform apply -lock=true -lock-timeout=0s -input=false -auto-approve=true  -parallelism=10 -refresh=true   ----
+STDOUT: [0m[1mmodule.module-ec2.module.random_name.random_pet.random_name: Creating...[0m
+  length:    "" => "4"
+  separator: "" => "-"[0m
+[0m[1mmodule.module-ec2.module.random_name.random_pet.random_name: Creation complete after 0s (ID: visually-newly-main-sunbird)[0m[0m
+[0m[1mmodule.module-ec2.aws_key_pair.my_key: Creating...[0m
+  fingerprint: "" => "<computed>"
+  key_name:    "" => "key-visually-newly-main-sunbird"
+  public_key:  "" => "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC5TLuMcNUNAVKP5gctybicE7/Lzui0/fu7RKUbDVYd4JjZcSmco4NYUFfUE7dmPXclYYK/g4BXjNwD7MeJOEMCVn4qR2Y0e4VunrWXINnayM8sr4+LcFpFCOGgpkON6YTIdQkbrp18u1PqqtAMtCSrK1wE7yoZBw2GjBGY8fNFCFaF5ftSUqV9yaErt++SlvRKvxGaRO76ZCdi+3QQYvKwUW4FIebZe6bXslemyrUk657rihembboLbfWhPzlugcyIzyxtQGwVHj3alqsRvDBtz5lkjXTcrYbdNatJ6wnfOrAl1tLLX2lNOhFHxbVMvdcenRDXH3gALdUGp8lSeojXVj0zF/eymCw17wNtQqCg5McGUe3TucvYh+ZdImufpmaIuCubrPdIRwkGGvAlaMQKM5LJU2x1xd26phn66nAv4Db37IVR+J+HllT+JRQOUxSTeaqbijeM74Vga+HyP/GqjtE/mYh2s7MPU51MPnXrz/DqtTmGNMcFVuEarQ6MdSlIfoT0Xs55GRP/bbTeSYzQXtKgAAMUcp4JP5zpkR36z7eybikbXVROJBkZVUsdQ1tf0/HyTTMZwXM4sljUmQNEklMuCmf+5qHPZL4V9kyYQhxXHGUW0qyHf4K/2uQhP3q6eeKV030QwMfnhIHnxm43ZgjGDhKzXkRW8KYuxZEOoQ== atanas.v4@gmail.com"[0m
+[0m[1mmodule.module-ec2.aws_key_pair.my_key: Creation complete after 2s (ID: key-visually-newly-main-sunbird)[0m[0m
+[0m[1mmodule.module-ec2.aws_instance.new_ec2: Creating...[0m
+  ami:                               "" => "ami-0daad02ff4ba87139"
+  arn:                               "" => "<computed>"
+  associate_public_ip_address:       "" => "<computed>"
+  availability_zone:                 "" => "<computed>"
+  cpu_core_count:                    "" => "<computed>"
+  cpu_threads_per_core:              "" => "<computed>"
+  ebs_block_device.#:                "" => "<computed>"
+  ephemeral_block_device.#:          "" => "<computed>"
+  get_password_data:                 "" => "false"
+  instance_state:                    "" => "<computed>"
+  instance_type:                     "" => "t2.micro"
+  ipv6_address_count:                "" => "<computed>"
+  ipv6_addresses.#:                  "" => "<computed>"
+  key_name:                          "" => "key-visually-newly-main-sunbird"
+  network_interface.#:               "" => "<computed>"
+  network_interface_id:              "" => "<computed>"
+  password_data:                     "" => "<computed>"
+  placement_group:                   "" => "<computed>"
+  primary_network_interface_id:      "" => "<computed>"
+  private_dns:                       "" => "<computed>"
+  private_ip:                        "" => "<computed>"
+  public_dns:                        "" => "<computed>"
+  public_ip:                         "" => "<computed>"
+  root_block_device.#:               "" => "<computed>"
+  security_groups.#:                 "" => "<computed>"
+  source_dest_check:                 "" => "true"
+  subnet_id:                         "" => "subnet-8a9f0ff0"
+  tags.%:                            "" => "1"
+  tags.Name:                         "" => "visually-newly-main-sunbird"
+  tenancy:                           "" => "<computed>"
+  volume_tags.%:                     "" => "<computed>"
+  vpc_security_group_ids.#:          "" => "1"
+  vpc_security_group_ids.3109554475: "" => "sg-0e3a153ccaa3977cd"[0m
+STDERR: [31m
+[1m[31mError: [0m[0m[1mError applying plan:
+
+1 error(s) occurred:
+
+* module.module-ec2.aws_instance.new_ec2: 1 error(s) occurred:
+
+* aws_instance.new_ec2: Error launching source instance: Blocked: This account is currently blocked and not recognized as a valid account. Please contact aws-verification@amazon.com if you have questions.
+	status code: 400, request id: bea4e663-d81c-4198-954d-4f5e9c348e89
+
+Terraform does not automatically rollback in the face of errors.
+Instead, your Terraform state file has been partially updated with
+any resources that successfully completed. Please address the error
+above and apply again to incrementally change your infrastructure.[0m
+
+[0m[0m[0m
+---- End output of terraform apply -lock=true -lock-timeout=0s -input=false -auto-approve=true  -parallelism=10 -refresh=true   ----
+Ran terraform apply -lock=true -lock-timeout=0s -input=false -auto-approve=true  -parallelism=10 -refresh=true   returned 1
+E, [2018-10-12T14:51:29.577514 #55320] ERROR -- default-ubuntu: ----------------------
+E, [2018-10-12T14:51:29.577542 #55320] ERROR -- default-ubuntu: ------Backtrace-------
+E, [2018-10-12T14:51:29.577568 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/kitchen-terraform-4.0.0/lib/kitchen/provisioner/terraform.rb:106:in `rescue in call'
+E, [2018-10-12T14:51:29.577595 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/kitchen-terraform-4.0.0/lib/kitchen/provisioner/terraform.rb:98:in `call'
+E, [2018-10-12T14:51:29.577622 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:408:in `block in converge_action'
+E, [2018-10-12T14:51:29.577648 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:548:in `block in synchronize_or_call'
+E, [2018-10-12T14:51:29.577674 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:546:in `synchronize'
+E, [2018-10-12T14:51:29.577706 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:546:in `synchronize_or_call'
+E, [2018-10-12T14:51:29.577730 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:513:in `block in action'
+E, [2018-10-12T14:51:29.577755 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2018-10-12T14:51:29.577777 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:512:in `action'
+E, [2018-10-12T14:51:29.577796 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:404:in `converge_action'
+E, [2018-10-12T14:51:29.577813 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2018-10-12T14:51:29.577842 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2018-10-12T14:51:29.577856 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2018-10-12T14:51:29.577870 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:380:in `each'
+E, [2018-10-12T14:51:29.577884 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2018-10-12T14:51:29.577898 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:140:in `converge'
+E, [2018-10-12T14:51:29.577912 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:197:in `public_send'
+E, [2018-10-12T14:51:29.577925 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2018-10-12T14:51:29.577942 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2018-10-12T14:51:29.577955 #55320] ERROR -- default-ubuntu: ----End Backtrace-----
+E, [2018-10-12T14:51:29.577969 #55320] ERROR -- default-ubuntu: ---Nested Exception---
+E, [2018-10-12T14:51:29.577982 #55320] ERROR -- default-ubuntu: Class: Kitchen::Terraform::Error
+E, [2018-10-12T14:51:29.577995 #55320] ERROR -- default-ubuntu: Message: Running command resulted in failure: Expected process to exit with [0], but received '1'
+---- Begin output of terraform apply -lock=true -lock-timeout=0s -input=false -auto-approve=true  -parallelism=10 -refresh=true   ----
+STDOUT: [0m[1mmodule.module-ec2.module.random_name.random_pet.random_name: Creating...[0m
+  length:    "" => "4"
+  separator: "" => "-"[0m
+[0m[1mmodule.module-ec2.module.random_name.random_pet.random_name: Creation complete after 0s (ID: visually-newly-main-sunbird)[0m[0m
+[0m[1mmodule.module-ec2.aws_key_pair.my_key: Creating...[0m
+  fingerprint: "" => "<computed>"
+  key_name:    "" => "key-visually-newly-main-sunbird"
+  public_key:  "" => "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC5TLuMcNUNAVKP5gctybicE7/Lzui0/fu7RKUbDVYd4JjZcSmco4NYUFfUE7dmPXclYYK/g4BXjNwD7MeJOEMCVn4qR2Y0e4VunrWXINnayM8sr4+LcFpFCOGgpkON6YTIdQkbrp18u1PqqtAMtCSrK1wE7yoZBw2GjBGY8fNFCFaF5ftSUqV9yaErt++SlvRKvxGaRO76ZCdi+3QQYvKwUW4FIebZe6bXslemyrUk657rihembboLbfWhPzlugcyIzyxtQGwVHj3alqsRvDBtz5lkjXTcrYbdNatJ6wnfOrAl1tLLX2lNOhFHxbVMvdcenRDXH3gALdUGp8lSeojXVj0zF/eymCw17wNtQqCg5McGUe3TucvYh+ZdImufpmaIuCubrPdIRwkGGvAlaMQKM5LJU2x1xd26phn66nAv4Db37IVR+J+HllT+JRQOUxSTeaqbijeM74Vga+HyP/GqjtE/mYh2s7MPU51MPnXrz/DqtTmGNMcFVuEarQ6MdSlIfoT0Xs55GRP/bbTeSYzQXtKgAAMUcp4JP5zpkR36z7eybikbXVROJBkZVUsdQ1tf0/HyTTMZwXM4sljUmQNEklMuCmf+5qHPZL4V9kyYQhxXHGUW0qyHf4K/2uQhP3q6eeKV030QwMfnhIHnxm43ZgjGDhKzXkRW8KYuxZEOoQ== atanas.v4@gmail.com"[0m
+[0m[1mmodule.module-ec2.aws_key_pair.my_key: Creation complete after 2s (ID: key-visually-newly-main-sunbird)[0m[0m
+[0m[1mmodule.module-ec2.aws_instance.new_ec2: Creating...[0m
+  ami:                               "" => "ami-0daad02ff4ba87139"
+  arn:                               "" => "<computed>"
+  associate_public_ip_address:       "" => "<computed>"
+  availability_zone:                 "" => "<computed>"
+  cpu_core_count:                    "" => "<computed>"
+  cpu_threads_per_core:              "" => "<computed>"
+  ebs_block_device.#:                "" => "<computed>"
+  ephemeral_block_device.#:          "" => "<computed>"
+  get_password_data:                 "" => "false"
+  instance_state:                    "" => "<computed>"
+  instance_type:                     "" => "t2.micro"
+  ipv6_address_count:                "" => "<computed>"
+  ipv6_addresses.#:                  "" => "<computed>"
+  key_name:                          "" => "key-visually-newly-main-sunbird"
+  network_interface.#:               "" => "<computed>"
+  network_interface_id:              "" => "<computed>"
+  password_data:                     "" => "<computed>"
+  placement_group:                   "" => "<computed>"
+  primary_network_interface_id:      "" => "<computed>"
+  private_dns:                       "" => "<computed>"
+  private_ip:                        "" => "<computed>"
+  public_dns:                        "" => "<computed>"
+  public_ip:                         "" => "<computed>"
+  root_block_device.#:               "" => "<computed>"
+  security_groups.#:                 "" => "<computed>"
+  source_dest_check:                 "" => "true"
+  subnet_id:                         "" => "subnet-8a9f0ff0"
+  tags.%:                            "" => "1"
+  tags.Name:                         "" => "visually-newly-main-sunbird"
+  tenancy:                           "" => "<computed>"
+  volume_tags.%:                     "" => "<computed>"
+  vpc_security_group_ids.#:          "" => "1"
+  vpc_security_group_ids.3109554475: "" => "sg-0e3a153ccaa3977cd"[0m
+STDERR: [31m
+[1m[31mError: [0m[0m[1mError applying plan:
+
+1 error(s) occurred:
+
+* module.module-ec2.aws_instance.new_ec2: 1 error(s) occurred:
+
+* aws_instance.new_ec2: Error launching source instance: Blocked: This account is currently blocked and not recognized as a valid account. Please contact aws-verification@amazon.com if you have questions.
+	status code: 400, request id: bea4e663-d81c-4198-954d-4f5e9c348e89
+
+Terraform does not automatically rollback in the face of errors.
+Instead, your Terraform state file has been partially updated with
+any resources that successfully completed. Please address the error
+above and apply again to incrementally change your infrastructure.[0m
+
+[0m[0m[0m
+---- End output of terraform apply -lock=true -lock-timeout=0s -input=false -auto-approve=true  -parallelism=10 -refresh=true   ----
+Ran terraform apply -lock=true -lock-timeout=0s -input=false -auto-approve=true  -parallelism=10 -refresh=true   returned 1
+E, [2018-10-12T14:51:29.578028 #55320] ERROR -- default-ubuntu: ----------------------
+E, [2018-10-12T14:51:29.578042 #55320] ERROR -- default-ubuntu: ------Backtrace-------
+E, [2018-10-12T14:51:29.578056 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/kitchen-terraform-4.0.0/lib/kitchen/provisioner/terraform.rb:106:in `rescue in call'
+E, [2018-10-12T14:51:29.578070 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/kitchen-terraform-4.0.0/lib/kitchen/provisioner/terraform.rb:98:in `call'
+E, [2018-10-12T14:51:29.578083 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:408:in `block in converge_action'
+E, [2018-10-12T14:51:29.578101 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:548:in `block in synchronize_or_call'
+E, [2018-10-12T14:51:29.578115 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:546:in `synchronize'
+E, [2018-10-12T14:51:29.578129 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:546:in `synchronize_or_call'
+E, [2018-10-12T14:51:29.578145 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:513:in `block in action'
+E, [2018-10-12T14:51:29.578159 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2018-10-12T14:51:29.578173 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:512:in `action'
+E, [2018-10-12T14:51:29.578202 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:404:in `converge_action'
+E, [2018-10-12T14:51:29.578216 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2018-10-12T14:51:29.578230 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2018-10-12T14:51:29.578244 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2018-10-12T14:51:29.578257 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:380:in `each'
+E, [2018-10-12T14:51:29.578271 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2018-10-12T14:51:29.578284 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:140:in `converge'
+E, [2018-10-12T14:51:29.578298 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:197:in `public_send'
+E, [2018-10-12T14:51:29.578314 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2018-10-12T14:51:29.578327 #55320] ERROR -- default-ubuntu: /Users/achuchulev/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2018-10-12T14:51:29.578344 #55320] ERROR -- default-ubuntu: ----End Backtrace-----
