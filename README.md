@@ -1,4 +1,4 @@
-# A terraform module that creates an EC2 instance in AWS with a randomly generated name
+# A repo that creates an EC2 instance in AWS with a randomly generated name
 
 ### Prerequisits
 
@@ -10,8 +10,8 @@
 ### Download the repo and go to the repo directory
 
 ```
-git clone https://github.com/achuchulev/module-ec2.git
-cd module-ec2/
+git clone https://github.com/achuchulev/terraform-ec2.git
+cd terraform-ec2/
 ```
 
 ### Create a terraform.tfvars file and reflect your setup there
