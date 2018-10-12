@@ -41,3 +41,12 @@ terraform plan
 terraform apply
 terraform destroy
 ```
+
+### How to test
+
+```
+kitchen list
+kitchen converge
+kitchen verify
+kitchen destroy
+```
