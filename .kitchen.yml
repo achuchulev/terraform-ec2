@@ -18,7 +18,7 @@ verifier:
       key_files:
         - "~/.ssh/id_rsa"
       controls:
-      - check_pkg
+      - nginx_check
 
 suites:
   - name: default
