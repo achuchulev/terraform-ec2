@@ -17,8 +17,6 @@ verifier:
       hosts_output: public_ip
       key_files:
         - "~/.ssh/id_rsa"
-      controls:
-      - nginx_check
 
 suites:
   - name: default
