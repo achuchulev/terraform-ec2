@@ -19,9 +19,9 @@ cd terraform-ec2/
 ```
 aws_access_key = ""
 aws_secret_key = ""
-ami_id = "ami-id"  # Once ami-id is changed terraform is going to re-create the ec2 instance with new name
+ami_id = "ami-id"
 region = "aws-region"
-instance_type = "t2.micro"
+instance_type = "some_instance_type"
 subnet_id = "subnet-id"
 vpc_security_group_ids = ["sg-id"]
 ```
@@ -33,7 +33,7 @@ export AWS_ACCESS_KEY_ID=
 export AWS_SECRET_ACCESS_KEY=
 ```
 
-### Build/destroy AWS instance
+### How to build/destroy AWS instance
 
 ```
 terraform init
