@@ -16,7 +16,7 @@ verifier:
       user: ubuntu
       hosts_output: public_ip
       key_files:
-        - "~/.ssh/id_rsa"
+        - id_rsa
 
 suites:
   - name: default
