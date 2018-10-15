@@ -24,6 +24,7 @@ region = "aws-region"
 instance_type = "some_instance_type"
 subnet_id = "subnet-id"
 vpc_security_group_ids = ["sg-id"]
+public_key = ""
 ```
 
 ### Export your AWS access key and secret key as enviroment variables
