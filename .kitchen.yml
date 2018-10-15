@@ -18,7 +18,7 @@ verifier:
       key_files:
         - id_rsa
       controls:
-	- check_package
+ 	- check_package
 	- check_tag
 
 suites:
