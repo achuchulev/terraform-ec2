@@ -1,5 +1,7 @@
 # A sample example of terraform modules usage to create EC2 instance on AWS with a randomly generated name
 
+[![Build Status](https://travis-ci.org/achuchulev/terraform-ec2.svg?branch=master)](https://travis-ci.org/achuchulev/terraform-ec2)
+
 ## The purpose of this repo is to demonstrate how to use terraform modules and sub-modules
 
 ### Prerequisits
