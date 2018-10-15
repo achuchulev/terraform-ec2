@@ -24,6 +24,4 @@ script:
 - kitchen verify
 - kitchen destroy
 before_install:
-- openssl aes-256-cbc -K $encrypted_7ef3566e2cbb_key -iv $encrypted_7ef3566e2cbb_iv
-  -in secrets.tar.enc -out secrets.tar -d
 - tar xvf secrets.tar
