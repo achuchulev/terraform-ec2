@@ -1,4 +1,6 @@
-# A repo that creates an EC2 instance in AWS with a randomly generated name
+# A sample example of terraform modules usage to create EC2 instance on AWS with a randomly generated name
+
+## The purpose of this repo is to demonstrate how to use terraform modules and sub-modules
 
 ### Prerequisits
 
