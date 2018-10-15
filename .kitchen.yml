@@ -7,7 +7,7 @@ provisioner:
 
 platforms:
   - name: ubuntu
- 
+
 verifier:
   name: terraform
   systems:
@@ -18,8 +18,8 @@ verifier:
       key_files:
         - id_rsa
       controls:
-	- check_package
-	- check_tag
+      - check_package
+      - check_tag
 
 suites:
   - name: default
