@@ -45,6 +45,8 @@ terraform destroy
 
 ### How to test
 
+* You should copy your private key to repo directory using command `cp ~/.ssh/id_rsa id_rsa` for kitchen verify to work
+
 ```
 kitchen list
 kitchen converge
