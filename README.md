@@ -49,7 +49,7 @@ terraform destroy
 
 ### Kitchen test
 
-* You should copy your private key to repo directory using command `cp ~/.ssh/id_rsa id_rsa` for kitchen verify to work
+* Copy your private key to the repo directory using command `cp ~/.ssh/id_rsa id_rsa` for kitchen verify to work
 
 ```
 kitchen list
@@ -60,12 +60,11 @@ kitchen destroy
 
 ### Setup your travis test environment
 
-* You should follow the steps below:
-
 ```
-1. tar cvf secrets.tar terraform.tfvars ~/.ssh/id_rsa (create an archive that includes terraform.tfvars and your private key)
-2. travis encrypt-file secrets.tar (encrypt archive overrideing existing secrets.tar.enc)
-3. edit .travis.yml and replace $encrypted_xxxxxxxx_key and $encrypted_xxxxxxxx_iv with those from output of previous command)
-4. rm secrets.tar (to prevent uploading private_key in plain text directly to repo)
-5. push changes to your repo
+1. cp ~/.ssh/id_rsa id_rsa (to copy your private key to the repo directory)
+2. tar cvf secrets.tar terraform.tfvars id_rsa (create an archive that includes terraform.tfvars and your private key)
+3. travis encrypt-file secrets.tar (encrypt archive overrideing existing secrets.tar.enc)
+4. edit .travis.yml and replace $encrypted_xxxxxxxx_key and $encrypted_xxxxxxxx_iv with those from output of previous command)
+5. rm secrets.tar (to prevent uploading private_key in plain text directly to repo)
+6. push changes to your repo
 ```
