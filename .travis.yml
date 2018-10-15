@@ -23,3 +23,9 @@ script:
 - kitchen converge
 - kitchen verify
 - kitchen destroy
+before_install:
+- openssl aes-256-cbc -K $encrypted_7ef3566e2cbb_key -iv $encrypted_7ef3566e2cbb_iv
+  -in terraform.tfvars.enc -out terraform.tfvars -d
+- echo $DEPLOY_KEY_ENC | base64 --decode | openssl aes-256-cbc -K $encrypted_7ef3566e2cbb_key -iv $encrypted_7ef3566e2cbb_iv
+  -in id_rsa.enc -out ./id_rsa -d
+
