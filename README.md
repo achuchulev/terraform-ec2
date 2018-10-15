@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/achuchulev/terraform-ec2.svg?branch=master)](https://travis-ci.org/achuchulev/terraform-ec2)
 
-## The purpose of this repo is to demonstrate how to use terraform modules and sub-modules
+## The purpose of this repo is to demonstrate usage of terraform modules and sub-modules
 
 ### Prerequisits
 
