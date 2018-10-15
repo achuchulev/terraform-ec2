@@ -17,6 +17,9 @@ verifier:
       hosts_output: public_ip
       key_files:
         - id_rsa
+      controls:
+	- check_package
+	- check_tag
 
 suites:
   - name: default
