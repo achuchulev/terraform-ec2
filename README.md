@@ -65,6 +65,6 @@ kitchen destroy
 2. tar cvf secrets.tar terraform.tfvars id_rsa (create an archive that includes terraform.tfvars and your private key)
 3. travis encrypt-file secrets.tar (encrypt archive overrideing existing secrets.tar.enc)
 4. edit .travis.yml and replace $encrypted_xxxxxxxx_key and $encrypted_xxxxxxxx_iv with those from output of previous command)
-5. rm secrets.tar (to prevent uploading private_key in plain text directly to repo)
+5. rm secrets.tar id_rsa (to prevent uploading private_key in plain text directly to repo)
 6. push changes to your repo
 ```

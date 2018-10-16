@@ -1,7 +1,6 @@
 #  Local .terraform directories
 **/.terraform/*
 .kitchen/
-secrets.tar
 id_rsa
 # .tfstate files
 *.tfstate
