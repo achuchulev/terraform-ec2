@@ -4,12 +4,14 @@
 
 ## The purpose of this repo is to demonstrate usage of terraform modules and sub-modules
 
-### Prerequisits
+### Prerequisites
 
 * git
 * terraform
 * AWS subscription
 * Available SSH keys for your linux user
+
+## How to build
 
 ### Download the repo and go to the repo directory
 
@@ -47,18 +49,63 @@ terraform apply
 terraform destroy
 ```
 
-### Kitchen test
+## How to test
 
-* Copy your private key to the repo directory using command `cp ~/.ssh/id_rsa id_rsa` for kitchen verify to work
+### on Linux
+
+#### Prerequisites
+
+* You will need to install EC2 drivers and the AWS SDK for Ruby
 
 ```
-kitchen list
-kitchen converge
-kitchen verify
-kitchen destroy
+gem install test-kitchen
+gem install kitchen-inspec
+gem install aws-sdk
+gem install ec2
 ```
 
-### Setup your travis test environment
+#### Run test
+
+Run `kitchen test` 
+
+### on MAC
+
+#### Prerequisit
+
+##### Install rbenv to use ruby version 2.3.1
+
+```
+brew install rbenv
+rbenv install 2.3.1
+rbenv local 2.3.1
+rbenv versions
+```
+
+##### Add the following lines to your ~/.bash_profile:
+
+```
+eval "$(rbenv init -)"
+true
+export PATH="$HOME/.rbenv/bin:$PATH"
+```
+
+##### Reload profile: 
+
+`source ~/.bash_profile`
+
+##### Install bundler
+
+```
+gem install bundler
+bundle install
+```
+
+#### Run the test: 
+
+`bundle exec kitchen test`
+
+
+## How to setup your travis test environment
 
 ```
 1. cp ~/.ssh/id_rsa id_rsa (to copy your private key to the repo directory)
