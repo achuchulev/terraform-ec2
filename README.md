@@ -70,7 +70,7 @@ Run `kitchen test`
 
 ### on MAC
 
-#### Prerequisit
+#### Prerequisites
 
 ##### Install rbenv to use ruby version 2.3.1
 
