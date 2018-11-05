@@ -2,9 +2,13 @@
 **/.terraform/*
 .kitchen/
 id_rsa
+
 # .tfstate files
 *.tfstate
 *.tfstate.*
 
 # .tfvars files
 *.tfvars
+
+.DS_Store
+Gemfile.lock
